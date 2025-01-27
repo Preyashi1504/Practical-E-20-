@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: lightblue;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        .contact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Karnika Preyashi</h1>
+        <p></p>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <ul>
+                <li><img src=""C:\Users\KARNIKA PREYASHI\Downloads\Me formal.jpg"" width=200 height=200 style="align:right"></li>
+                <li>Phone: 729****610</li>
+                <li>Emergency contact: 799****724</li>
+                <li>Blood Group: O+</li>
+                <li>DOB: 15-11-2004</li>
+                <li>Hometown: Ranchi </li>
+                <p>Email: <a href="mailto:karnika.preyashi24@pcu.edu.in">karnika.preyashi24@pcu.edu.in</a></p>
+                <p>Personal Email: <a href="mailto:karnikapreyashi04@gmail.com">karnikapreyashi04@gmail.com</a></p>
+                <p>Github: <a href="mailto:https://github.com/Preyashi1504/Practical-E-20-">https://github.com/Preyashi1504/Practical-E-20-</a></p>
+                
+               
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p>As an engineering student, I have developed a strong foundation in problem-solving, critical thinking, and technical skills across various areas of engineering. My experience includes hands-on projects, collaborative work in teams, and proficiency in software tools relevant to my field. I am well-versed in areas like mathematics, physics, and computer-aided design (CAD), and I thrive on tackling complex challenges while applying theoretical knowledge to real-world situations. With a passion for innovation and a drive for continuous learning, I am excited to bring my skills to projects that push the boundaries of engineering.
+
+
+
+</p>
+        </div>
+
+      <div class="section">
+            <h2>Objective</h2>
+            <p>"Aspiring computer science engineer eager to apply problem-solving skills, programming knowledge, and enthusiasm for innovation in a dynamic learning environment."</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <table class="table">
+                <tr>
+                    <th>Institution Name</th>
+                    <th>Degree Program</th>
+                    <th>Current Year</th>
+                    <th>Expected Graduation Date</th>
+                    <th>CGPA</th>
+                </tr>
+                <tr>
+                    <td>N.S D.A.V. Public School</td>
+                    <td>CBSE.</td>
+                    <td>10th</td>
+                    <td>2021</td>
+                    <td>85%</td>
+                </tr>
+                <tr>
+                    <td>Rajiv Gandhi College </td>
+                    <td>JAC board</td>
+                    <td>12th</td>
+                    <td>2023</td>
+                    <td>72%</td>
+                </tr>
+                <tr>
+                    <td>Pimpri Chinchwad University</td>
+                    <td>Bachelor of Technology (B.Tech) in Computer Science and Engineering.</td>
+                    <td>1st Year</td>
+                    <td>2028</td>
+                    <td>7.50</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> C, C++, HTML, CSS</li>
+                <li><strong>Tools and Technologies:</strong> Git, Visual Studio Code</li>
+                <li><strong>Operating Systems:</strong> Windows, Linux, etc</li>
+                <li><strong>Software/Applications:</strong> MS Office, Photoshop</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Badminton</li>
+                <li>Art and paintings</li>
+                <li>Reading</li>
+                <li>Travelling</li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+</html>
