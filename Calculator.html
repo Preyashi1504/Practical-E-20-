@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"></script>
+
+    <style>
+        table {
+            border: 1px solid yellow;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 35px 40px;
+            background-color: beige;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            border: none;
+            border-radius: 2px;
+        }
+
+        input[type="text"] {
+            padding: 35px 40px;
+            font-size: 30px;
+            font-weight: arial;
+            border: none;
+            border-radius: 5px;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table id="calcTable">
+        <tr>
+            <td colspan="3"><input type="text" id="display"></td>
+            <td><input type="button" value="C" onclick="clearDisplay()" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="insertValue('1')"> </td>
+            <td><input type="button" value="2" onclick="insertValue('2')"> </td>
+            <td><input type="button" value="3" onclick="insertValue('3')"> </td>
+            <td><input type="button" value="/" onclick="insertValue('/')"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="insertValue('4')"> </td>
+            <td><input type="button" value="5" onclick="insertValue('5')"> </td>
+            <td><input type="button" value="6" onclick="insertValue('6')"> </td>
+            <td><input type="button" value="*" onclick="insertValue('*')"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="insertValue('7')"> </td>
+            <td><input type="button" value="8" onclick="insertValue('8')"> </td>
+            <td><input type="button" value="9" onclick="insertValue('9')"> </td>
+            <td><input type="button" value="-" onclick="insertValue('-')"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="insertValue('0')"> </td>
+            <td><input type="button" value="." onclick="insertValue('.')"> </td>
+            <td><input type="button" value="=" onclick="calculateResult()"> </td>
+            <td><input type="button" value="+" onclick="insertValue('+')"> </td>
+        </tr>
+    </table>
+
+    <script>
+        // Function to insert values into the input field
+        function insertValue(value) {
+            document.getElementById("display").value += value;
+        }
+
+        // Function to evaluate the expression and display the result
+        function calculateResult() {
+            let expression = document.getElementById("display").value;
+            try {
+                let result = math.evaluate(expression);
+                document.getElementById("display").value = result;
+            } catch (error) {
+                document.getElementById("display").value = "Error";
+            }
+        }
+
+        // Function to clear the input field
+        function clearDisplay() {
+            document.getElementById("display").value = "";
+        }
+
+        // Handle keyboard input
+        document.addEventListener("keydown", function(event) {
+            let key = event.key;
+            if (/[0-9+\-*/.=]/.test(key)) {
+                if (key === "=" || key === "Enter") {
+                    calculateResult();
+                } else {
+                    insertValue(key);
+                }
+            } else if (key === "Backspace") {
+                let currentValue = document.getElementById("display").value;
+                document.getElementById("display").value = currentValue.slice(0, -1);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
