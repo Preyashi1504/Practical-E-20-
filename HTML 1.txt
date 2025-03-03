@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasprit Bumrah - Information</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .content {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Jasprit Bumrah - The Yorker King</h1>
+        <h3><i>India's pace spearhead</i></h3>
+        
+        <p>Jasprit Bumrah is an Indian cricketer known for his unorthodox bowling action and lethal yorkers. He was born on December 6, 1993, in Ahmedabad, India.</p>
+
+        <h2>Early Life</h2>
+        <p>Bumrah's journey to cricket stardom started from humble beginnings. He was raised in Ahmedabad and caught the eye of selectors with his exceptional pace and accuracy while playing for Gujarat in domestic cricket.</p>
+
+        <h2>Career</h2>
+        <p>Bumrah made his international debut in 2016 and quickly became India's leading fast bowler. He is renowned for his ability to bowl in death overs and swing the ball both ways. His performances in Test, ODI, and T20 formats have made him one of the best fast bowlers in the world.</p>
+
+        <h2>Awards</h2>
+        <ul>
+            <li>ICC ODI Team of the Year (2017, 2018)</li>
+            <li>ICC Test Team of the Year (2021)</li>
+            <li>Arjuna Award (2020)</li>
+            <li>Many more accolades</li>
+        </ul>
+
+        <h2>Personal Life</h2>
+        <p>Jasprit Bumrah married sports presenter Sanjana Ganesan in March 2021.</p>
+
+        <h3>P-E1 - <i><u>Div E</u></i></h3>
+
+        <h2><a href="https://www.espncricinfo.com/cricketers/jasprit-bumrah-625383" target="_blank">More about Jasprit Bumrah</a></h2>
+
+        <img src="path_to_image_of_jasprit_bumrah.jpg" alt="Jasprit Bumrah Image">
+        <p><b>Image</b></p>
+    </div>
+
+</body>
+</html>
