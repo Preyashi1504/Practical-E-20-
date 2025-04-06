@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temperature Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f0f0f0;
+    }
+    .converter {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="converter">
+    <h2>Temperature Conversion Tool</h2>
+    <form id="tempForm">
+      <label for="tempInput">Enter Temperature:</label><br/>
+      <input type="number" id="tempInput" name="temperature" required /><br/><br/>
+
+      <label>Conversion Type:</label><br/>
+      <input type="radio" id="toF" name="conversion" value="toF" checked />
+      <label for="toF">Celsius to Fahrenheit</label><br/>
+      <input type="radio" id="toC" name="conversion" value="toC" />
+      <label for="toC">Fahrenheit to Celsius</label><br/><br/>
+
+      <button type="submit">Convert</button>
+    </form>
+
+    <div class="result" id="resultDisplay"></div>
+  </div>
+
+  <script>
+    document.getElementById("tempForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // prevent form from submitting normally
+
+      const tempValue = parseFloat(document.getElementById("tempInput").value);
+      const conversionType = document.querySelector('input[name="conversion"]:checked').value;
+      let result;
+
+      if (conversionType === "toF") {
+        result = (tempValue * 9/5) + 32;
+        document.getElementById("resultDisplay").innerText = `${tempValue}°C = ${result.toFixed(2)}°F`;
+      } else {
+        result = (tempValue - 32) * 5/9;
+        document.getElementById("resultDisplay").innerText = `${tempValue}°F = ${result.toFixed(2)}°C`;
+      }
+    });
+  </script>
+</body>
+</html>
